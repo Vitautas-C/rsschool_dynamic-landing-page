@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study projects</title>
+    <link rel="stylesheet" href="dist/style.css">
+
+</head>
+
+<body class="projects" spellcheck="false">
+    <main class="main">
+
+        <!-- Weather start -->
+        <section class="weather">
+            <div class="weather__information">
+
+                <div class="greeting__wrapper">
+                    <h2 class="time"></h2>
+                    <h2 class="greeting__title">
+                        <span class="greeting"></span>
+                        <span class="name" contenteditable="true">my friend</span>
+                    </h2>
+                    <h2 class="greeting__title">It is <span class="date"></span></h2>
+                    <h2>What about your plans for today?</h2>
+                    <h2 class="focus" contenteditable="true"></h2>
+                </div>
+
+                <div class="weather__wrapper">
+                    <h2 class="weather__title">
+                        <span class="city" contenteditable="true">London</span>
+                    </h2>
+                    <p class="weather__subtitle">
+                        <span class="temp"></span>
+                        <span class="precipitation"></span>
+                    </p>
+                </div>
+
+            </div>
+            <!-- Weather end -->
+            <!-- Modal city error start -->
+            <section class="modal">
+                <div class="modal__content">
+                    <span class="far fa-window-close modal__button-close"></span>
+                    <h3 class="modal__title">Sorry, we cannot find this city in the database. Please try again.</h3>
+                    <div class="modal__button">ок</div>
+                </div>
+            </section>
+            <!-- Modal city error end -->
+
+    </main>
+    <script src="https://kit.fontawesome.com/e8eebc1614.js " crossorigin="anonymous "></script>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>
