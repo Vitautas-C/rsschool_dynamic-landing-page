@@ -38,7 +38,7 @@ const showWeather = () => {
     }
     console.log("city: ", city);
     const apiKey = "5b58aee62c41eb64fcab16edce2e5cc1";
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&units=metric&appid=${apiKey}`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=en&units=metric&appid=${apiKey}`;
 
     fetch(url).then((response) => {
         return response.json();
