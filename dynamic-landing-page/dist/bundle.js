@@ -24,7 +24,7 @@
     const i = () => {
         let e = c.textContent;
         0 == e && (e = "London"), console.log("city: ", e);
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${e}&lang=en&units=metric&appid=5b58aee62c41eb64fcab16edce2e5cc1`).then(e => e.json()).then(e => {
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${e}&lang=en&units=metric&appid=5b58aee62c41eb64fcab16edce2e5cc1`).then(e => e.json()).then(e => {
             window.data = e, console.log(e), 200 !== e.cod && (console.log("City not found"), x.classList.add("block"), localStorage.setItem("usersСity", "London"));
             let t = e.weather[0].icon;
             a.style.backgroundImage = `url(img/icons/${t}.jpg`, r.textContent = e.weather[0].description, o.textContent = window.data.main.temp.toFixed(1) + " °C"
