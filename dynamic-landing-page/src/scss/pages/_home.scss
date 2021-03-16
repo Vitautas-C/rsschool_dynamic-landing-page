@@ -67,11 +67,12 @@ body {
 }
 
 .weather__title {
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 
 .weather__subtitle {
-    width: 190px;
     padding: 37px 0px 0px 0px;
     display: flex;
     flex-direction: column-reverse;
@@ -87,9 +88,13 @@ body {
     border-bottom: 2px solid white;
 }
 
-.city,
 .name {
-    max-width: 190px;
+    white-space: nowrap;
+}
+
+.city {
+    text-align: center;
+    min-width: 170px;
     white-space: nowrap;
 }
 
